@@ -1,43 +1,50 @@
 #!/usr/bin/env python3
 from sympy import *
 import matplotlib.pyplot as plt
+import numpy as np
 
 class Robot2Kinematics():
-  """Robot 2: Manipulador RRR con base rotatoria (movimiento 3D)"""
+  """Robot 2: Base rotatoria en Z + Manipulador RR vertical (movimiento 3D)"""
   def __init__(self):
     pass
     
   def direct_kinematics(self):
     print("Robot 2: Definiendo variables del modelo en sympy")
     self.theta_0_1, self.theta_1_2, self.theta_2_3 = symbols("theta_0_1, theta_1_2, theta_2_3")
-    self.l0 = 0.05  # Altura de base rotatoria
-    self.l1 = 0.20  # Longitud eslabón 1
-    self.l2 = 0.30  # Longitud eslabón 2
+    self.l0 = 0.05  # Altura de base rotatoria (5cm)
+    self.l1 = 0.05  # Longitud eslabón 1 (5cm)
+    self.l2 = 0.20  # Longitud eslabón 2 (20cm)
+    self.l3 = 0.35  # Longitud eslabón 2 (35cm)
     
-    # T_0_1: Rotación de base sobre eje Z
-    self.T_0_1 = self.trans_homo(0, 0, self.l0, 0, 0, self.theta_0_1)
+    # ROBOT 2: Base rotatoria en Z + RR planar vertical
     
-    # T_1_2: Eslabón 1 (rotación sobre eje Y local después de rotar 90° en X)
-    self.T_1_2 = self.trans_homo_xz(self.l1, 0, pi/2, self.theta_1_2)
-    
-    # T_2_3: Eslabón 2 (rotación sobre eje Y local)
+    # Transformaciones
+    self.T_0_1 = self.trans_homo_xz(0, self.l0, 0, self.theta_0_1)
+    self.T_1_2 = self.trans_homo(0, self.l1, 0, pi/2, 0, self.theta_1_2)
     self.T_2_3 = self.trans_homo_xz(self.l2, 0, 0, self.theta_2_3)
-    
-    T_0_p = simplify(self.T_0_1 * self.T_1_2 * self.T_2_3)
+    self.T_3_p = self.trans_homo_xz(self.l3, 0, 0, 0)
 
+    # Transformación completa
+    T_0_p = simplify(self.T_0_1 * self.T_1_2 * self.T_2_3 * self.T_3_p)
+
+    # Posición del efector final (x, y, z)
     x_0_p = T_0_p[0, 3]
     y_0_p = T_0_p[1, 3]
     z_0_p = T_0_p[2, 3]
     
+    # Vector de postura: [x, y, z] (sin orientación)
     self.xi_0_p = Matrix([
       [x_0_p], 
       [y_0_p], 
       [z_0_p]
     ])
     
+    # Calcular Jacobiano
     self.J = Matrix.hstack(diff(self.xi_0_p, self.theta_0_1), 
                            diff(self.xi_0_p, self.theta_1_2), 
                            diff(self.xi_0_p, self.theta_2_3))
+
+    # Inversa del Jacobiano
     self.J_inv = self.J.inv()
     
     # Vector de velocidades del espacio de trabajo
@@ -47,10 +54,11 @@ class Robot2Kinematics():
                           [self.z_dot]])
     
     # Ecuación de cinemática inversa
+    # q_dot = J_inv * xi_dot
     self.q_dot = self.J_inv * self.xi_dot
     print("Robot 2: Variables definidas")
     
-  def trajectory_generator(self, q_in = [0.1, 0.1, 0.1], xi_fn = [0.3, 0.3, 0.2], duration = 4):
+  def trajectory_generator(self, q_in = [0.1, 0.1, 0.1], xi_fn = [0.3, 0.2, 0.3], duration = 4):
     self.freq = 30
     print("Robot 2: Definiendo trayectoria")
     
@@ -196,7 +204,7 @@ class Robot2Kinematics():
     plt.show()
 
   def trans_homo_xz(self, x=0, z=0, gamma=0, alpha=0)->Matrix:
-    """Transformación homogénea para plano XZ"""
+    """Transformación homogénea para plano XZ (igual que example)"""
     R_z = Matrix([ [cos(alpha), -sin(alpha), 0], [sin(alpha), cos(alpha), 0],[0, 0, 1]])
     R_x = Matrix([ [1, 0, 0], [0, cos(gamma), -sin(gamma)],[0, sin(gamma), cos(gamma)]])
 
@@ -206,9 +214,8 @@ class Robot2Kinematics():
     T_x = Matrix.vstack(Matrix.hstack(R_x, p_x), Matrix([[0,0,0,1]]))
     T_z = Matrix.vstack(Matrix.hstack(R_z, p_z), Matrix([[0,0,0,1]]))
     return T_x * T_z
-  
+
   def trans_homo(self, x, y, z, gamma, beta, alpha):
-    """Transformación homogénea general"""
     R_z = Matrix([ [cos(alpha), -sin(alpha), 0], [sin(alpha), cos(alpha), 0],[0, 0, 1]])
     R_y = Matrix([ [cos(beta), 0, sin(beta)], [0, 1, 0],[-sin(beta), 0, cos(beta)]])
     R_x = Matrix([ [1, 0, 0], [0, cos(gamma), -sin(gamma)],[0, sin(gamma), cos(gamma)]])
@@ -216,6 +223,7 @@ class Robot2Kinematics():
     p_x = Matrix([[x],[0],[0]])
     p_y = Matrix([[0],[y],[0]])
     p_z = Matrix([[0],[0],[z]])
+    
     
     T_x = Matrix.vstack(Matrix.hstack(R_x, p_x), Matrix([[0,0,0,1]]))
     T_y = Matrix.vstack(Matrix.hstack(R_y, p_y), Matrix([[0,0,0,1]]))

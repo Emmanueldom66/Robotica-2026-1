@@ -38,11 +38,6 @@ class Robot2ControlManager(Node):
     """Callback para recibir comandos de posición deseada"""
     # En esta sección, se envían comandos a la interfaz de hardware
     # En este ejemplo sencillo, envía el mensaje tal cual lo recibe
-    # En un sistema real, aquí podrías:
-    # - Aplicar límites de seguridad
-    # - Convertir comandos de posición a comandos de torque
-    # - Implementar control PID
-    # - Interpolar comandos
     
     self.hardware_command_publisher.publish(msg)
 

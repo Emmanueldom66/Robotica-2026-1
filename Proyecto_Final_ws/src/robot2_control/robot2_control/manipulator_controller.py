@@ -55,7 +55,7 @@ class Robot2ManipulatorController(Node):
       JointState, "/robot2/joint_goals", 10
     )
     
-    self.get_logger().info("Robot 2 - Controlador inicializado (RRR con base rotatoria)")
+    self.get_logger().info("Robot 2 - Controlador inicializado (Base rotatoria + RR)")
     
   def end_effector_callback(self, msg: Twist):
     """Callback para recibir objetivo del efector final via Twist"""
@@ -89,7 +89,7 @@ class Robot2ManipulatorController(Node):
     self.moving = True
     self.get_logger().info("Robot 2 - Punto objetivo clickeado")
     
-    # Para Robot 2 (espacio 3D): usar x, y, z del punto clickeado
+    # Para Robot 2: usar x, y, z del punto clickeado
     self.robot_kinematics.trajectory_generator(
       self.current_joint_states.position,
       [msg.point.x, msg.point.y, msg.point.z], 
@@ -152,22 +152,15 @@ class Robot2ManipulatorController(Node):
     self.current_joint_states = msg
 
 def main(args=None):
-  node = None
   try:
     rclpy.init(args=args)
     node = Robot2ManipulatorController()
     rclpy.spin(node)
-  except KeyboardInterrupt:
-    print("Robot 2 - Node stopped by user")
-  except Exception as e:
-    print(f"Robot 2 - Error: {e}")
-    import traceback
-    traceback.print_exc()
-  finally:
-    if node is not None:
-      node.destroy_node()
-    if rclpy.ok():
-      rclpy.shutdown()
+  except KeyboardInterrupt as e:
+    print("Robot 2 - Node stopped")
+  finally: 
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
   main()
