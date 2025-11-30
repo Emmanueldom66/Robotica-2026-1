@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+resource/robot2_description
+robot2_description/__init__.py
+robot2_description.egg-info/PKG-INFO
+robot2_description.egg-info/SOURCES.txt
+robot2_description.egg-info/dependency_links.txt
+robot2_description.egg-info/entry_points.txt
+robot2_description.egg-info/requires.txt
+robot2_description.egg-info/top_level.txt
+robot2_description.egg-info/zip-safe
+rviz/robot2_config.rviz
+urdf/robot2.urdf

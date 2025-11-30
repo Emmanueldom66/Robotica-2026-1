@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating robot1_description.egg-info
+writing robot1_description.egg-info/PKG-INFO
+writing dependency_links to robot1_description.egg-info/dependency_links.txt
+writing entry points to robot1_description.egg-info/entry_points.txt
+writing requirements to robot1_description.egg-info/requires.txt
+writing top-level names to robot1_description.egg-info/top_level.txt
+writing manifest file 'robot1_description.egg-info/SOURCES.txt'
+reading manifest file 'robot1_description.egg-info/SOURCES.txt'
+writing manifest file 'robot1_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/lib/python3.10/site-packages/robot1-description.egg-link (link to .)
+
+Installed /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description
+running symlink_data
+creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index
+creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index/resource_index
+creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index/resource_index/packages
+symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/resource/robot1_description -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index/resource_index/packages
+symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/package.xml -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description
+creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/urdf
+symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/urdf/robot1.urdf -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/urdf
+creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/rviz
+symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/rviz/robot1_config.rviz -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/rviz
