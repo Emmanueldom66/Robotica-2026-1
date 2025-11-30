@@ -1,0 +1,20 @@
+[1.609s] Invoking command in '/home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description': PYTHONPATH=/home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/build --no-deps symlink_data --force
+[1.935s] running develop
+[2.168s] running egg_info
+[2.168s] writing robot2_description.egg-info/PKG-INFO
+[2.169s] writing dependency_links to robot2_description.egg-info/dependency_links.txt
+[2.169s] writing entry points to robot2_description.egg-info/entry_points.txt
+[2.173s] writing requirements to robot2_description.egg-info/requires.txt
+[2.173s] writing top-level names to robot2_description.egg-info/top_level.txt
+[2.173s] reading manifest file 'robot2_description.egg-info/SOURCES.txt'
+[2.174s] writing manifest file 'robot2_description.egg-info/SOURCES.txt'
+[2.177s] running build_ext
+[2.178s] Creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot2_description/lib/python3.10/site-packages/robot2-description.egg-link (link to .)
+[2.178s] 
+[2.178s] Installed /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description
+[2.181s] running symlink_data
+[2.181s] symbolically linking /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/resource/robot2_description -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot2_description/share/ament_index/resource_index/packages
+[2.181s] symbolically linking /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/package.xml -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot2_description/share/robot2_description
+[2.181s] symbolically linking /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/urdf/robot2.urdf -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot2_description/share/robot2_description/urdf
+[2.181s] symbolically linking /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/rviz/robot2_config.rviz -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot2_description/share/robot2_description/rviz
+[2.269s] Invoked command in '/home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description' returned '0': PYTHONPATH=/home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot2_description/build --no-deps symlink_data --force

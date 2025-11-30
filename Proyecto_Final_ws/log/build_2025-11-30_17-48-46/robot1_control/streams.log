@@ -1,0 +1,51 @@
+[1.620s] Invoking command in '/home/robousr/Robotica-2026-1/Proyecto_Final_ws/src/robot1_control': PYTHONPATH=/home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot1_control build --build-base /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build install --record /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/install.log --single-version-externally-managed install_data
+[1.918s] running egg_info
+[1.918s] creating ../../build/robot1_control/robot1_control.egg-info
+[1.918s] writing ../../build/robot1_control/robot1_control.egg-info/PKG-INFO
+[1.921s] writing dependency_links to ../../build/robot1_control/robot1_control.egg-info/dependency_links.txt
+[1.921s] writing entry points to ../../build/robot1_control/robot1_control.egg-info/entry_points.txt
+[1.921s] writing requirements to ../../build/robot1_control/robot1_control.egg-info/requires.txt
+[1.921s] writing top-level names to ../../build/robot1_control/robot1_control.egg-info/top_level.txt
+[1.921s] writing manifest file '../../build/robot1_control/robot1_control.egg-info/SOURCES.txt'
+[1.922s] reading manifest file '../../build/robot1_control/robot1_control.egg-info/SOURCES.txt'
+[1.922s] writing manifest file '../../build/robot1_control/robot1_control.egg-info/SOURCES.txt'
+[1.922s] running build
+[1.923s] running build_py
+[1.925s] creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build
+[1.927s] creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib
+[1.927s] creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control
+[1.927s] copying robot1_control/controller_manager.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control
+[1.929s] copying robot1_control/dynamics.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control
+[1.930s] copying robot1_control/__init__.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control
+[1.930s] copying robot1_control/manipulator_controller.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control
+[1.932s] copying robot1_control/hardware_interface.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control
+[1.932s] copying robot1_control/kinematics.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control
+[1.935s] running install
+[1.936s] running install_lib
+[1.936s] creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control
+[1.936s] copying /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control/controller_manager.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control
+[1.937s] copying /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control/dynamics.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control
+[1.937s] copying /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control/__init__.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control
+[1.937s] copying /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control/manipulator_controller.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control
+[1.937s] copying /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control/hardware_interface.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control
+[1.937s] copying /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build/lib/robot1_control/kinematics.py -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control
+[1.937s] byte-compiling /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control/controller_manager.py to controller_manager.cpython-310.pyc
+[1.937s] byte-compiling /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control/dynamics.py to dynamics.cpython-310.pyc
+[1.938s] byte-compiling /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control/__init__.py to __init__.cpython-310.pyc
+[1.938s] byte-compiling /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control/manipulator_controller.py to manipulator_controller.cpython-310.pyc
+[1.945s] byte-compiling /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control/hardware_interface.py to hardware_interface.cpython-310.pyc
+[1.945s] byte-compiling /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control/kinematics.py to kinematics.cpython-310.pyc
+[1.951s] running install_data
+[1.951s] creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/share/ament_index
+[1.951s] creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/share/ament_index/resource_index
+[1.951s] creating /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/share/ament_index/resource_index/packages
+[1.951s] copying resource/robot1_control -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/share/ament_index/resource_index/packages
+[1.951s] copying package.xml -> /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/share/robot1_control
+[1.951s] running install_egg_info
+[1.951s] Copying ../../build/robot1_control/robot1_control.egg-info to /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages/robot1_control-0.0.0-py3.10.egg-info
+[1.951s] running install_scripts
+[1.967s] Installing controller_manager script to /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/robot1_control
+[1.968s] Installing hardware_interface script to /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/robot1_control
+[1.968s] Installing manipulator_controller script to /home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/robot1_control
+[1.968s] writing list of installed files to '/home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/install.log'
+[2.051s] Invoked command in '/home/robousr/Robotica-2026-1/Proyecto_Final_ws/src/robot1_control' returned '0': PYTHONPATH=/home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Robotica-2026-1/Proyecto_Final_ws/install/robot1_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot1_control build --build-base /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/build install --record /home/robousr/Robotica-2026-1/Proyecto_Final_ws/build/robot1_control/install.log --single-version-externally-managed install_data

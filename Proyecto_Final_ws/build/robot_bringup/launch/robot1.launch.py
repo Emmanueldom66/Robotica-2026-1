@@ -1,1 +1,1 @@
-/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/src/robot_bringup/launch/robot1.launch.py
+/home/robousr/Robotica-2026-1/Proyecto_Final_ws/src/robot_bringup/launch/robot1.launch.py
