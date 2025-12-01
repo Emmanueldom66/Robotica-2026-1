@@ -32,29 +32,19 @@ class Robot2HardwareInterface(Node):
     self.get_logger().info("Robot 2 - Hardware Interface inicializada")
 
   def hardware_obj_callback(self, msg: JointState):
-    """Callback para recibir comandos hacia el hardware"""
     # En esta parte se mandaría a través de alguna comunicación 
-    # la información al hardware real (por ejemplo, via serial, CAN, etc.)
-    
-    # En esta simulación, asignamos los comandos como si fueran 
-    # la posición real del robot (respuesta perfecta)
-    # En un sistema real, aquí habría:
-    # - Comunicación con drivers de motores
-    # - Envío de comandos PWM, voltaje, corriente, etc.
-    # - Manejo de errores de comunicación
+    # la información al hardware
+    # Aquí estamos asignando los comandos como si fueran la posición real del robot
     
     self.current_joint_state = msg
 
   def joint_states_timer_callback(self):
-    """Callback periódico para publicar el estado del robot"""
+    msg = JointState()
     # En esta parte recibiría la información del estado del robot
-    # desde sensores, encoders, etc.
-    
-    # En un sistema real, aquí habría:
-    # - Lectura de encoders
-    # - Lectura de sensores de corriente
-    # - Lectura de sensores de fuerza/torque
-    # - Procesamiento de señales
+    # ---
+    msg.header.stamp = self.get_clock().now().to_msg()
+    msg.name = ["turret_joint_r2", "shoulder_joint_r2", "arm_joint_r2"]
+    msg.position = [0.1, 0.1, 0.1]
     
     # Actualizar marca de tiempo
     self.current_joint_state.header.stamp = self.get_clock().now().to_msg()
