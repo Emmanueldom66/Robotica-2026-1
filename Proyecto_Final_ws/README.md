@@ -550,9 +550,6 @@ El repositorio incluye un `.gitignore` adecuado que excluye:
 
 ---
 
-## 📜 Licencia
-
-TODO: Declaración de licencia pendiente
 
 ---
 
@@ -564,17 +561,3 @@ TODO: Declaración de licencia pendiente
 - [Robot Kinematics and Dynamics (Craig, 2005)](https://www.pearson.com/store/p/introduction-to-robotics/P100000434453)
 
 ---
-
-## 🚀 Próximas Mejoras
-
-- [ ] Implementar control de impedancia
-- [ ] Agregar detección de colisiones
-- [ ] Integrar con MoveIt2 para planificación avanzada
-- [ ] Implementar control adaptativo
-- [ ] Añadir simulación Gazebo
-- [ ] Crear interfaz de usuario gráfica
-- [ ] Implementar control en el espacio de tareas
-
----
-
-**¡Disfruta trabajando con los robots! 🤖**
