@@ -1,6 +1,7 @@
 from launch import LaunchDescription
 from launch.substitutions import Command
 from launch_ros.actions import Node
+from launch_ros.parameter_descriptions import ParameterValue
 from ament_index_python import get_package_share_directory
 import os
 
@@ -10,8 +11,9 @@ def generate_launch_description():
   model_path = os.path.join(description_path, "urdf", "robot2.urdf")
   rviz_conf_path = os.path.join(description_path, "rviz", "robot2_config.rviz")
   
-  # Modelo URDF como parámetro
-  robot_description = {"robot_description": Command(["xacro ", model_path])}
+  # Modelo URDF como parámetro (ejecuta xacro y pasa el resultado como string)
+  xacro_cmd = Command(['xacro ', model_path])
+  robot_description = {"robot_description": ParameterValue(xacro_cmd, value_type=str)}
 
   # Nodos de control
   controller_manager_node = Node(

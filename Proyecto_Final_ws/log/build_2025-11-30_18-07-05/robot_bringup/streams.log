@@ -1,0 +1,26 @@
+[0.668s] Invoking command in '/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup': PYTHONPATH=/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/build --no-deps symlink_data
+[0.863s] running develop
+[0.992s] running egg_info
+[0.992s] creating robot_bringup.egg-info
+[0.992s] writing robot_bringup.egg-info/PKG-INFO
+[0.993s] writing dependency_links to robot_bringup.egg-info/dependency_links.txt
+[0.993s] writing entry points to robot_bringup.egg-info/entry_points.txt
+[0.993s] writing requirements to robot_bringup.egg-info/requires.txt
+[0.993s] writing top-level names to robot_bringup.egg-info/top_level.txt
+[0.993s] writing manifest file 'robot_bringup.egg-info/SOURCES.txt'
+[0.995s] reading manifest file 'robot_bringup.egg-info/SOURCES.txt'
+[0.995s] writing manifest file 'robot_bringup.egg-info/SOURCES.txt'
+[0.997s] running build_ext
+[0.997s] Creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/lib/python3.10/site-packages/robot-bringup.egg-link (link to .)
+[0.998s] 
+[0.998s] Installed /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup
+[0.998s] running symlink_data
+[0.998s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/ament_index
+[0.998s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/ament_index/resource_index
+[0.998s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/ament_index/resource_index/packages
+[0.999s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/resource/robot_bringup -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/ament_index/resource_index/packages
+[0.999s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/package.xml -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/robot_bringup
+[0.999s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/robot_bringup/launch
+[0.999s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/launch/robot2.launch.py -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/robot_bringup/launch
+[0.999s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/launch/robot1.launch.py -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/share/robot_bringup/launch
+[1.026s] Invoked command in '/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup' returned '0': PYTHONPATH=/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot_bringup/build --no-deps symlink_data

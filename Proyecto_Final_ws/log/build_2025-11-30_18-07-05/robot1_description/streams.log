@@ -1,0 +1,27 @@
+[1.721s] Invoking command in '/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description': PYTHONPATH=/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/build --no-deps symlink_data
+[2.147s] running develop
+[2.364s] running egg_info
+[2.364s] creating robot1_description.egg-info
+[2.364s] writing robot1_description.egg-info/PKG-INFO
+[2.364s] writing dependency_links to robot1_description.egg-info/dependency_links.txt
+[2.364s] writing entry points to robot1_description.egg-info/entry_points.txt
+[2.364s] writing requirements to robot1_description.egg-info/requires.txt
+[2.364s] writing top-level names to robot1_description.egg-info/top_level.txt
+[2.364s] writing manifest file 'robot1_description.egg-info/SOURCES.txt'
+[2.366s] reading manifest file 'robot1_description.egg-info/SOURCES.txt'
+[2.366s] writing manifest file 'robot1_description.egg-info/SOURCES.txt'
+[2.366s] running build_ext
+[2.366s] Creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/lib/python3.10/site-packages/robot1-description.egg-link (link to .)
+[2.367s] 
+[2.367s] Installed /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description
+[2.367s] running symlink_data
+[2.367s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index
+[2.367s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index/resource_index
+[2.367s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index/resource_index/packages
+[2.367s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/resource/robot1_description -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/ament_index/resource_index/packages
+[2.367s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/package.xml -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description
+[2.367s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/urdf
+[2.367s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/urdf/robot1.urdf -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/urdf
+[2.367s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/rviz
+[2.367s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/rviz/robot1_config.rviz -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/share/robot1_description/rviz
+[2.695s] Invoked command in '/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description' returned '0': PYTHONPATH=/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot1_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot1_description/build --no-deps symlink_data

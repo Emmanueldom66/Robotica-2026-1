@@ -1,0 +1,26 @@
+[1.733s] Invoking command in '/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control': PYTHONPATH=/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control/build --no-deps symlink_data
+[2.291s] running develop
+[2.514s] running egg_info
+[2.514s] creating robot2_control.egg-info
+[2.514s] writing robot2_control.egg-info/PKG-INFO
+[2.514s] writing dependency_links to robot2_control.egg-info/dependency_links.txt
+[2.514s] writing entry points to robot2_control.egg-info/entry_points.txt
+[2.514s] writing requirements to robot2_control.egg-info/requires.txt
+[2.515s] writing top-level names to robot2_control.egg-info/top_level.txt
+[2.516s] writing manifest file 'robot2_control.egg-info/SOURCES.txt'
+[2.516s] reading manifest file 'robot2_control.egg-info/SOURCES.txt'
+[2.517s] writing manifest file 'robot2_control.egg-info/SOURCES.txt'
+[2.518s] running build_ext
+[2.518s] Creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/lib/python3.10/site-packages/robot2-control.egg-link (link to .)
+[2.518s] Installing controller_manager script to /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/lib/robot2_control
+[2.519s] Installing hardware_interface script to /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/lib/robot2_control
+[2.519s] Installing manipulator_controller script to /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/lib/robot2_control
+[2.519s] 
+[2.519s] Installed /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control
+[2.519s] running symlink_data
+[2.519s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/share/ament_index
+[2.519s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/share/ament_index/resource_index
+[2.519s] creating /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/share/ament_index/resource_index/packages
+[2.519s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control/resource/robot2_control -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/share/ament_index/resource_index/packages
+[2.519s] symbolically linking /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control/package.xml -> /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/share/robot2_control
+[2.711s] Invoked command in '/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control' returned '0': PYTHONPATH=/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/install/robot2_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robousr/Desktop/Robotica_Semestre-2026-1/Proyecto_Final_ws/build/robot2_control/build --no-deps symlink_data
