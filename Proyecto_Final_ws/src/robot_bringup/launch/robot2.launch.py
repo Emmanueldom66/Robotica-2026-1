@@ -10,7 +10,7 @@ def generate_launch_description():
   model_path = os.path.join(description_path, "urdf", "robot2.urdf")
   rviz_conf_path = os.path.join(description_path, "rviz", "robot2_config.rviz")
   
-  robot_description_content = Command(['cat ', model_path])
+  robot_description_content = Command(['xacro ', model_path])
   robot_description = {
     'robot_description': ParameterValue(robot_description_content, value_type=str)
   }

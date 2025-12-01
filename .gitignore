@@ -1,6 +1,29 @@
-**/.ipynb_checkpoints/*
-**/__pycache__/
-Workspaces/*/build
-Workspaces/*/install
-Workspaces/*/log
-**/carpeta_ejemplo/*
+# Colcon build artifacts
+Proyecto_Final_ws/build/
+Proyecto_Final_ws/install/
+Proyecto_Final_ws/log/
+
+# Python
+**/_pycache_/
+*/.pyc
+*/.pyo
+*/.egg-info/
+**/.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ROS
+*.bag
+*.bag.active
+
+# Colcon
+.colcon/

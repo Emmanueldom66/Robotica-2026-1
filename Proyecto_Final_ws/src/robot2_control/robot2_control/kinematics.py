@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from sympy import *
 import matplotlib.pyplot as plt
-import numpy as np
 
 class Robot2Kinematics():
   """Robot 2: Base rotatoria en Z + Manipulador RR vertical (movimiento 3D)"""
@@ -130,6 +129,7 @@ class Robot2Kinematics():
       self.xi_dot_dot_m[:, a] = xi_dot_dot_lam(float(self.t_m[0,a]))
     
     self.q_in = q_in
+    print("Robot 2: Trayectoria en espacio de trabajo generada")
 
   def inverse_kinematics(self):
     print("Robot 2: Modelando cinemática inversa")
