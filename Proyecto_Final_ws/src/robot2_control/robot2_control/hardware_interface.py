@@ -24,7 +24,7 @@ class Robot2HardwareInterface(Node):
     self.current_joint_state = JointState()
     self.current_joint_state.header.stamp = self.get_clock().now().to_msg()
     self.current_joint_state.name = ["turret_joint_r2", "shoulder_joint_r2", "arm_joint_r2"]
-    self.current_joint_state.position = [0.1, 0.1, 0.1]
+    self.current_joint_state.position = [0.1, 0.1, -0.1]
     
     # Timer para publicar el estado actual periódicamente (10 Hz)
     self.create_timer(0.1, self.joint_states_timer_callback)
