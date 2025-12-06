@@ -546,7 +546,7 @@ El repositorio incluye un `.gitignore` adecuado que excluye:
 ## 👥 Autores
 
 - **Maintainer**: robousr
-- **Email**: emmanueldom007@outlook.com / luisfdopapu@gmail.com
+- **Email**: emmanueldom007@outlook.com / luisfdopapu@gmail.com /ju.castro.0113@gmail.com
 
 ---
 
