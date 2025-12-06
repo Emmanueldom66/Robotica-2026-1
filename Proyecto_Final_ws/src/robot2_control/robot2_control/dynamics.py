@@ -23,7 +23,7 @@ class Robot2Dynamics():
     self.kinematics.T_2_C2 = self.kinematics.trans_homo(self.kinematics.l2 / 2, 0, 0, 0, 0, 0)
     self.kinematics.T_3_C3 = self.kinematics.trans_homo(self.kinematics.l2 / 2, 0, 0, 0, 0, 0)
     
-    self.kinematics.T_0_C1 = simplify(self.kinematics.T_0_1 * self.kinematics.T_1_2 * self.kinematics.T_1_C1)
+    self.kinematics.T_0_C1 = simplify(self.kinematics.T_0_1 * self.kinematics.T_1_C1)
     self.kinematics.T_0_C2 = simplify(self.kinematics.T_0_2 * self.kinematics.T_2_C2)
     self.kinematics.T_0_C3 = simplify(self.kinematics.T_0_3 * self.kinematics.T_3_C3)
     
@@ -79,8 +79,8 @@ class Robot2Dynamics():
     omega_3_3 = self.kinematics.R_2_3.transpose() * omega_2_2 + Matrix([[0], [0], [self.theta_2_3_dot]])
     
     # Velocidades angulares de centros de masa
-    omega_1_C1 = omega_2_2
-    omega_2_C2 = omega_3_3
+    omega_1_C1 = omega_1_1
+    omega_2_C2 = omega_2_2
     omega_3_C3 = omega_3_3
     
     # Velocidades lineales de sistemas
@@ -89,9 +89,9 @@ class Robot2Dynamics():
     v_3_3 = self.kinematics.R_2_3.transpose() * (v_2_2 + omega_2_2.cross(self.p_2_3))
     
     # Velocidades lineales de centros de masa
-    v_1_C1 = v_2_2 + omega_2_2.cross(self.p_1_C1)
-    v_2_C2 = v_3_3 + omega_3_3.cross(self.p_2_C2)
-    v_3_C3 = v_3_3 + omega_3_3.cross(self.p_3_C3)
+    v_1_C1 = v_2_2 + omega_1_C1.cross(self.p_1_C1)
+    v_2_C2 = v_3_3 + omega_2_C2.cross(self.p_2_C2)
+    v_3_C3 = v_3_3 + omega_3_C3.cross(self.p_3_C3)
     
     print("Robot 2: Generando ecuaciones de Lagrange")
     
